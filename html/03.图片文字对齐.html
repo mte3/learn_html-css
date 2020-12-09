@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片文字对齐</title>
+</head>
+<style>
+    img {
+        background-color: red;
+    }
+    div{
+        width: 400px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .A{
+        margin-top: 100px;
+        width: 0;
+        height: 0;
+        border: 100px solid transparent;
+        border-top-color:red ;
+    }
+    .B{
+        margin-top: 100px;
+        width: 0;
+        height: 0;
+        border-top: solid transparent 100px;
+        border-right: 50px solid rebeccapurple;
+    }
+</style>
+<body>
+<div>
+    <img src="../image/eye.png" alt="">
+    啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+        啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+</div>
+<div class="A"></div>
+<div class="B"></div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过度动画</title>
+</head>
+<style>
+    div {
+        width: 120px;
+        height: 240px;
+        background-color: red;
+        margin: 100px auto;
+        /*transition: 变化的属性 变化花费的时间 运动曲线 几秒后开始变化;*/
+        /*transition: width 1s ease .5s;*/
+        /*如果要多个属性改变，用all就可以了*/
+        transition: all 1s;
+    }
+
+    div:hover {
+        width: 80%;
+        height: 320px;
+        background-color: yellow;
+    }
+
+    .span {
+        display: block;
+        width: 800px;
+        height: 32px;
+        /*background-color: red;*/
+        border: 1px solid red;
+        margin: auto;
+        border-radius: 16px;
+    }
+
+    .con {
+        display: block;
+        background-color: red;
+        height: 32px;
+        width: 12%;
+        -webkit-border-bottom-left-radius: 16px;
+        -webkit-border-top-left-radius: 16px;
+        transition: all 1s;
+    }
+    .con:hover{
+        width: 100%;
+        border-radius: 16px;
+    }
+</style>
+<body>
+<div></div>
+<span class="span">
+    <span class="con"></span>
+</span>
+</body>
+</html>

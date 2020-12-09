@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input</title>
+</head>
+<style>
+    div {
+        font-size: 24px;
+    }
+
+    /*类名开头为icon*/
+    div[class^=icon] {
+        color: red;
+    }
+
+    /*类名结尾为data*/
+    div[class$=data] {
+        color: blue;
+    }
+
+    .father {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        font-size: 24px;
+    }
+
+    /*.father的最后一个子元素*/
+    .father div:last-child {
+        color: blue;
+    }
+
+    /*.father的第一个子元素*/
+    .father div:first-child {
+        color: red;
+    }
+
+    /*.father的第六个子元素*/
+    .father div:nth-child(6) {
+        color: red;
+    }
+
+    /*#father的偶数子元素*/
+    #father div:nth-child(even) {
+        color: red;
+    }
+
+    /*#father的基数子元素*/
+    #father div:nth-child(odd) {
+        color: blue;
+    }
+
+    #father div:nth-child(-n+3) {
+        color: blueviolet;
+    }
+</style>
+<body>
+<form>
+    数字：<input type="number">
+    邮箱：<input type="email">
+    时间：<input type="time">
+    颜色：<input type="color">
+    搜索：<input type="search">
+    密码：<input type="password">
+    选择：<input type="checkbox">
+    <input type="submit">
+
+    <div class="icon1">11111111111111111</div>
+    <div class="icon2">11111111111111111</div>
+    <div class="icon3">11111111111111111</div>
+    <div class="icon4">11111111111111111</div>
+    <div class="icon5">11111111111111111</div>
+    <div>111111111111111111</div>
+    <div class="mr-data">2222222222222222222</div>
+    <div class="ar-data">2222222222222222222</div>
+    <div class="gr-data">2222222222222222222</div>
+    <div class="br-data">2222222222222222222</div>
+    <div class="v">2222222222222222222</div>
+
+    <div class="father">
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+    </div>
+    <div id="father">
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+        <div>11111111111111111111111111111</div>
+    </div>
+</form>
+</body>
+</html>

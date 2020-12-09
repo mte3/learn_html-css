@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        /*让盒子的宽度就等于width,不受padding，margin影响*/
+        box-sizing: border-box;
+    }
+    div{
+        width: 320px;
+        height: 320px;
+        background-color: red;
+        border: 12px rebeccapurple solid;
+    }
+    .mo{
+        margin-top: 100px;
+        filter: blur(5px);
+    }
+    .mo:hover{
+        filter:blur(0);
+    }
+
+</style>
+<body>
+<div>小猪佩奇</div>
+<img class="img" src="../image/ss.jpg" alt="">
+<img class="mo" src="../image/ss.jpg" alt="">
+</body>
+</html>
